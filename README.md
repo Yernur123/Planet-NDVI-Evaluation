@@ -76,7 +76,20 @@ Observed peak dates:
 - These differences are useful signals for investigation, but they do not establish why vegetation conditions changed.
 The unusually large Field 3 changes should be reviewed against cloud coverage, sample count, no-data count, acquisition dates, and the underlying imagery before drawing an agricultural conclusion. The same quality review should be applied consistently to all fields.
 
-## 7. Limitations and assumptions
+## 7. Data Quality and Validation
+Data quality is an important consideration when interpreting satellite-derived vegetation indices.
+Potential factors affecting NDVI observations include:
+
+- Cloud coverage and cloud shadows.
+- Atmospheric conditions and haze
+- Missing or invalid pixels.
+- Differences in valid-pixel coverage between observations.
+- Differences in acquisition dates.
+- Actual changes in vegetation conditions.
+
+The unusually large Field 3 fluctuations should receive particular attention.
+
+## 8. Limitations and assumptions
 - NDVI is an indicator of vegetation greenness/activity, not a direct measurement of crop health, biomass, or yield.
 - NDVI changes can be associated with real field changes, but can also be affected by clouds, haze, shadows, atmospheric conditions, image processing, valid-pixel coverage, and differences between observation dates.
 - A difference between consecutive observations does not account for the number of days between them.
@@ -85,7 +98,7 @@ The unusually large Field 3 changes should be reviewed against cloud coverage, s
 - The prototype does not identify crop type or distinguish planting, harvesting, irrigation, disease, or other causes.
 - Any missing or unreliable observations should be documented rather than silently interpreted as stable vegetation.
 
-## 8. How to run the application
+## 9. How to run the application
 ### Requirements
 - Python 3.10 or a compatible Python version.
 - The packages used by the application: streamlit, pandas, and plotly.
