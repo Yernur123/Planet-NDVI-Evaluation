@@ -178,9 +178,9 @@ with tab2:
 with tab3:
     quality_columns = [
         col for col in [
-            "cloudcoveragepercent",
-            "samplecount",
-            "nodatacount"
+            "cloudCoveragePercent",
+            "sampleCount",
+            "noDataCount"
         ]
         if col in field_df.columns
     ]
